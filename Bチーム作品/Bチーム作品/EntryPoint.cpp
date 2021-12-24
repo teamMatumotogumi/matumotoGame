@@ -316,6 +316,9 @@ int WINAPI _tWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPTSTR lpszCm
 
             // 現在のバックバッファをフロントバッファとし、ディスプレイへの転送を開始する。
            // GraphicsEngine::Instance().Present();
+
+            //てｓｔ
+
         }
     }
 }
