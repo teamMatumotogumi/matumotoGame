@@ -1,7 +1,7 @@
-#include<Windows.h>
-#include<process.h>
-#include<tchar.h>
-#include<d3d12.h>
+ #include<Windows.h>
+ #include<process.h>
+ #include<tchar.h>
+ #include<d3d12.h>
 #include <dxgi1_6.h>					// DXGI (Microsoft DirectX Graphics Infrastructureの略) バージョン1.6
 #include <d3dcompiler.h>				// シェーダーファイルのコンパイル機能
 #include <DirectXMath.h>				// DirectX系の数学ライブラリ
