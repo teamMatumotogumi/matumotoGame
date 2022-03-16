@@ -140,11 +140,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="EntryPoint.cpp" />
+    <ClCompile Include="Game.System.cpp" />
     <ClCompile Include="Precompired.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ActionPlayer.h" />
+    <ClInclude Include="Game.System.h" />
     <ClInclude Include="Precompired.h" />
+    <ClInclude Include="Texture2D.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

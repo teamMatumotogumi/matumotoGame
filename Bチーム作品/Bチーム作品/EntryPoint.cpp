@@ -1,15 +1,13 @@
- #include<Windows.h>
- #include<process.h>
- #include<tchar.h>
- #include<d3d12.h>
-#include <dxgi1_6.h>					// DXGI (Microsoft DirectX Graphics Infrastructureの略) バージョン1.6
-#include <d3dcompiler.h>				// シェーダーファイルのコンパイル機能
-#include <DirectXMath.h>				// DirectX系の数学ライブラリ
+
 
 #include<assert.h>
-#include<stdio.h>
+
+#include"Precompired.h"
 
 #pragma comment(lib, "winmm.lib")           // timeGetTime()の為に必要
+#pragma comment(lib, "dxgi.lib")            // DXGIの為に必要
+#pragma comment(lib, "d3d12.lib")           // DirectX12に含まれる「DirectXGraphics」コンポーネントの為に必要
+#pragma comment(lib, "dxguid.lib")          // 各種インターフェースIDの為に必要
 
 
 //---------------------------------------------------------------------------------------------------------------------------------------------
@@ -20,6 +18,8 @@
 
 static const unsigned int GameScreenResolutionWidth = 1920;
 static const unsigned int GameScreenResolutionHeight = 1080;
+
+
 
 
 
