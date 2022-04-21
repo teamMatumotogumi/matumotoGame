@@ -1,0 +1,25 @@
+﻿初級者「C++の絵本 第2版」
+初心者「新・明解C++入門編」
+中級者「プログラミング言語C++ 第4版」
+中級者「Effective Modern C++」
+
+「データ構造とアルゴリズム」
+「DirectX12の魔導書」
+
+【OS、BIOS、デバイスドライバ】
+   C、C++
+   
+【GUIアプリ】
+   C++、C#、Java
+
+【AI】
+   C++、Python
+
+【Webクライアント】
+  HTML、CSS、Javascript
+
+【Webサーバー】
+  HTML、Java、PHP、Ruby
+
+
+

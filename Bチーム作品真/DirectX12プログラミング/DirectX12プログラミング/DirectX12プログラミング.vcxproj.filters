@@ -1,0 +1,493 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ゲームエンジン">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ゲームエンジン\グラフィックス">
+      <UniqueIdentifier>{3dabf7b4-88d5-4b7a-b396-42f5ba08f8f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ゲームエンジン\システム">
+      <UniqueIdentifier>{7f21badd-d7e9-461e-a19e-5a4b96abe3f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ゲームエンジン\数学">
+      <UniqueIdentifier>{f2857b4f-b9c4-40b8-9aab-8e46fbeca5f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ゲームエンジン\入力デバイス">
+      <UniqueIdentifier>{748661f3-8e65-4766-8c0b-3711724688c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ゲームエンジン\入力デバイス\コントロール">
+      <UniqueIdentifier>{1e4aeffd-1c21-4cbb-9a6b-2d9784c5a1fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ゲームエンジン\入力デバイス\測定値">
+      <UniqueIdentifier>{8c08b733-1925-465d-b800-b7835b5a3dce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ゲームエンジン\入力デバイス\設定">
+      <UniqueIdentifier>{bcbf5f91-2cb1-42dc-b632-1ee8f0f8c17f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ゲームエンジン\ゲームオブジェクト">
+      <UniqueIdentifier>{1951338e-f8cf-4d9a-827f-98afde2b995d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ゲームエンジン\ゲームオブジェクト\コンポーネント">
+      <UniqueIdentifier>{ba681e0b-06bf-4cfa-965e-fb5bf4526407}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="アプリ">
+      <UniqueIdentifier>{e704562f-3334-43f6-9dd1-3008df3f3154}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ゲームエンジン\シーン管理">
+      <UniqueIdentifier>{6fea7710-9249-4f5d-9ef0-502d896078b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ゲームエンジン\ゲームオブジェクト\コンポーネント\レンダラー">
+      <UniqueIdentifier>{7aa2c264-b5c5-4f15-b801-68396ead5945}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ゲームエンジン\ゲームオブジェクト\コンポーネント\レンダラー\スプライトレンダラー">
+      <UniqueIdentifier>{5f6766dc-4fd2-40fb-9e6a-439f655b6c5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ゲームエンジン\ゲームオブジェクト\コンポーネント\レンダラー\XYZ軸レンダラー">
+      <UniqueIdentifier>{39947b99-941a-43f4-9703-7151e47ec409}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ゲームエンジン\ゲームオブジェクト\コンポーネント\カメラ">
+      <UniqueIdentifier>{f4bc4ef4-5cf7-4783-8d5e-69821adf1f18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ゲームエンジン\ゲームオブジェクト\コンポーネント\トランスフォーム">
+      <UniqueIdentifier>{7e44348a-0b64-4102-8ee8-04ba7ac9ba41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ゲームエンジン\数学\3次元ベクトル">
+      <UniqueIdentifier>{537d99c1-780d-40db-adad-19e2bdc0458f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ゲームエンジン\数学\2次元ベクトル">
+      <UniqueIdentifier>{9f451dc4-7d2b-4c90-869e-ac8d6f7f7b62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ゲームエンジン\数学\カラー">
+      <UniqueIdentifier>{27042788-c675-4b14-8bf3-2e0e643f129f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ゲームエンジン\数学\4次元ベクトル">
+      <UniqueIdentifier>{20538631-1a44-47c2-b89c-d0bda10d931e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ゲームエンジン\数学\行列">
+      <UniqueIdentifier>{d4df923d-faf4-4d10-8349-77dcf6ab6a6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ゲームエンジン\数学\四元数">
+      <UniqueIdentifier>{7d75faad-f559-44fb-a575-b8a2c672f8c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ゲームエンジン\数学\平面">
+      <UniqueIdentifier>{f609ae1f-abfd-4618-acce-598a86c19956}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ゲームエンジン\ゲームオブジェクト\コンポーネント\レンダラー\グリッド線レンダラー">
+      <UniqueIdentifier>{512cc0a0-8ce2-4e73-9c04-f4f933a0beec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ゲームエンジン\ゲームオブジェクト\コンポーネント\スクリプト">
+      <UniqueIdentifier>{77ff7fa5-94ea-41d7-a168-a74015928b93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ゲームエンジン\数学\矩形">
+      <UniqueIdentifier>{ad44df54-9a20-4156-b6f2-dcd254619b79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ゲームエンジン\グラフィックス\スプライト">
+      <UniqueIdentifier>{77d8ad51-41a6-47d5-87f6-0cd9a9510ec9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ゲームエンジン\グラフィックス\ルートシグネチャ">
+      <UniqueIdentifier>{6177e571-ab34-4fd3-8f4c-5c86af81ba7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ゲームエンジン\グラフィックス\パイプラインステート">
+      <UniqueIdentifier>{8a755dcf-f1e2-4747-aa46-72fada08792a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ゲームエンジン\グラフィックス\シェーダー">
+      <UniqueIdentifier>{d196eb5d-7773-4192-9d69-b13d4378fee5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ゲームエンジン\グラフィックス\テクスチャ">
+      <UniqueIdentifier>{e5d89dad-3297-434e-9380-c723418bf841}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ゲームエンジン\グラフィックス\バッファ">
+      <UniqueIdentifier>{f7383902-ba7c-400f-9a62-6b006b325f20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ゲームエンジン\グラフィックス\深度ステンシル">
+      <UniqueIdentifier>{beba9c26-d91b-47c6-a3e4-9b77bafa0c40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ゲームエンジン\グラフィックス\マテリアル">
+      <UniqueIdentifier>{b477b050-fd80-4a90-9bd2-064bb73e495f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ゲームエンジン\数学\光線">
+      <UniqueIdentifier>{28bb6123-74bf-4a2c-ab2d-ace0ce1827bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="アプリ\ゲームコード">
+      <UniqueIdentifier>{4a64ebe4-91f0-4857-a105-03dc867484ca}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BufferResource.cpp">
+      <Filter>ゲームエンジン\グラフィックス\バッファ</Filter>
+    </ClCompile>
+    <ClCompile Include="ReferenceCounter.cpp">
+      <Filter>ゲームエンジン\システム</Filter>
+    </ClCompile>
+    <ClCompile Include="VertexBuffer.cpp">
+      <Filter>ゲームエンジン\グラフィックス\バッファ</Filter>
+    </ClCompile>
+    <ClCompile Include="IndexBuffer.cpp">
+      <Filter>ゲームエンジン\グラフィックス\バッファ</Filter>
+    </ClCompile>
+    <ClCompile Include="ShaderBytecode.cpp">
+      <Filter>ゲームエンジン\グラフィックス\シェーダー</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicsEngine.cpp">
+      <Filter>ゲームエンジン\グラフィックス</Filter>
+    </ClCompile>
+    <ClCompile Include="Object.cpp">
+      <Filter>ゲームエンジン\システム</Filter>
+    </ClCompile>
+    <ClCompile Include="ConstantBuffer.cpp">
+      <Filter>ゲームエンジン\グラフィックス\バッファ</Filter>
+    </ClCompile>
+    <ClCompile Include="DepthStencil.cpp">
+      <Filter>ゲームエンジン\グラフィックス\深度ステンシル</Filter>
+    </ClCompile>
+    <ClCompile Include="FrameResources.cpp">
+      <Filter>ゲームエンジン\グラフィックス</Filter>
+    </ClCompile>
+    <ClCompile Include="Component.cpp">
+      <Filter>ゲームエンジン\ゲームオブジェクト\コンポーネント</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject.cpp">
+      <Filter>ゲームエンジン\ゲームオブジェクト</Filter>
+    </ClCompile>
+    <ClCompile Include="Keyboard.cpp">
+      <Filter>ゲームエンジン\入力デバイス</Filter>
+    </ClCompile>
+    <ClCompile Include="SpriteRenderer.cpp">
+      <Filter>ゲームエンジン\ゲームオブジェクト\コンポーネント\レンダラー\スプライトレンダラー</Filter>
+    </ClCompile>
+    <ClCompile Include="InputStateBlock.cpp">
+      <Filter>ゲームエンジン\入力デバイス</Filter>
+    </ClCompile>
+    <ClCompile Include="InputControl.cpp">
+      <Filter>ゲームエンジン\入力デバイス\コントロール</Filter>
+    </ClCompile>
+    <ClCompile Include="AxisControl.cpp">
+      <Filter>ゲームエンジン\入力デバイス\コントロール</Filter>
+    </ClCompile>
+    <ClCompile Include="ButtonControl.cpp">
+      <Filter>ゲームエンジン\入力デバイス\コントロール</Filter>
+    </ClCompile>
+    <ClCompile Include="AnyKeyControl.cpp">
+      <Filter>ゲームエンジン\入力デバイス\コントロール</Filter>
+    </ClCompile>
+    <ClCompile Include="InputDevice.cpp">
+      <Filter>ゲームエンジン\入力デバイス</Filter>
+    </ClCompile>
+    <ClCompile Include="FourCC.cpp">
+      <Filter>ゲームエンジン\入力デバイス</Filter>
+    </ClCompile>
+    <ClCompile Include="PrimitiveValue.cpp">
+      <Filter>ゲームエンジン\入力デバイス</Filter>
+    </ClCompile>
+    <ClCompile Include="GridLinesRenderer.cpp">
+      <Filter>ゲームエンジン\ゲームオブジェクト\コンポーネント\レンダラー\グリッド線レンダラー</Filter>
+    </ClCompile>
+    <ClCompile Include="TypeInfo.cpp">
+      <Filter>ゲームエンジン\システム</Filter>
+    </ClCompile>
+    <ClCompile Include="EntryPoint.cpp" />
+    <ClCompile Include="Mathf.cpp">
+      <Filter>ゲームエンジン\数学</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>ゲームエンジン\シーン管理</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneManager.cpp">
+      <Filter>ゲームエンジン\シーン管理</Filter>
+    </ClCompile>
+    <ClCompile Include="ShaderReflection.cpp">
+      <Filter>ゲームエンジン\グラフィックス\シェーダー</Filter>
+    </ClCompile>
+    <ClCompile Include="AxisRenderer.cpp">
+      <Filter>ゲームエンジン\ゲームオブジェクト\コンポーネント\レンダラー\XYZ軸レンダラー</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>ゲームエンジン\ゲームオブジェクト\コンポーネント\カメラ</Filter>
+    </ClCompile>
+    <ClCompile Include="Transform.cpp">
+      <Filter>ゲームエンジン\ゲームオブジェクト\コンポーネント\トランスフォーム</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector3.cpp">
+      <Filter>ゲームエンジン\数学\3次元ベクトル</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderTexture.cpp">
+      <Filter>ゲームエンジン\グラフィックス\テクスチャ</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>ゲームエンジン\グラフィックス\テクスチャ</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderTextureDescriptor.cpp">
+      <Filter>ゲームエンジン\グラフィックス\テクスチャ</Filter>
+    </ClCompile>
+    <ClCompile Include="Precompiled.cpp">
+      <Filter>ゲームエンジン</Filter>
+    </ClCompile>
+    <ClCompile Include="Color.cpp">
+      <Filter>ゲームエンジン\数学\カラー</Filter>
+    </ClCompile>
+    <ClCompile Include="Behaviour.cpp">
+      <Filter>ゲームエンジン\ゲームオブジェクト\コンポーネント\スクリプト</Filter>
+    </ClCompile>
+    <ClCompile Include="MonoBehaviour.cpp">
+      <Filter>ゲームエンジン\ゲームオブジェクト\コンポーネント\スクリプト</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector2.cpp">
+      <Filter>ゲームエンジン\数学\2次元ベクトル</Filter>
+    </ClCompile>
+    <ClCompile Include="Sprite.cpp">
+      <Filter>ゲームエンジン\グラフィックス\スプライト</Filter>
+    </ClCompile>
+    <ClCompile Include="SpriteRendererBatch.cpp">
+      <Filter>ゲームエンジン\ゲームオブジェクト\コンポーネント\レンダラー\スプライトレンダラー</Filter>
+    </ClCompile>
+    <ClCompile Include="RootSignatureBuilder.cpp">
+      <Filter>ゲームエンジン\グラフィックス\ルートシグネチャ</Filter>
+    </ClCompile>
+    <ClCompile Include="StaticSampler.cpp">
+      <Filter>ゲームエンジン\グラフィックス\ルートシグネチャ</Filter>
+    </ClCompile>
+    <ClCompile Include="PipelineStateBuilder.cpp">
+      <Filter>ゲームエンジン\グラフィックス\パイプラインステート</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderTargetBlend.cpp">
+      <Filter>ゲームエンジン\グラフィックス\パイプラインステート</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer.cpp">
+      <Filter>ゲームエンジン\ゲームオブジェクト\コンポーネント\レンダラー</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector4.cpp">
+      <Filter>ゲームエンジン\数学\4次元ベクトル</Filter>
+    </ClCompile>
+    <ClCompile Include="Quaternion.cpp">
+      <Filter>ゲームエンジン\数学\四元数</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture2D.cpp">
+      <Filter>ゲームエンジン\グラフィックス\テクスチャ</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BufferResource.h">
+      <Filter>ゲームエンジン\グラフィックス\バッファ</Filter>
+    </ClInclude>
+    <ClInclude Include="VertexBuffer.h">
+      <Filter>ゲームエンジン\グラフィックス\バッファ</Filter>
+    </ClInclude>
+    <ClInclude Include="ReferenceCounter.h">
+      <Filter>ゲームエンジン\システム</Filter>
+    </ClInclude>
+    <ClInclude Include="Object.h">
+      <Filter>ゲームエンジン\システム</Filter>
+    </ClInclude>
+    <ClInclude Include="IndexBuffer.h">
+      <Filter>ゲームエンジン\グラフィックス\バッファ</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderBytecode.h">
+      <Filter>ゲームエンジン\グラフィックス\シェーダー</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicsEngine.h">
+      <Filter>ゲームエンジン\グラフィックス</Filter>
+    </ClInclude>
+    <ClInclude Include="ConstantBuffer.h">
+      <Filter>ゲームエンジン\グラフィックス\バッファ</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture2D.h">
+      <Filter>ゲームエンジン\グラフィックス\テクスチャ</Filter>
+    </ClInclude>
+    <ClInclude Include="DepthStencil.h">
+      <Filter>ゲームエンジン\グラフィックス\深度ステンシル</Filter>
+    </ClInclude>
+    <ClInclude Include="FrameResources.h">
+      <Filter>ゲームエンジン\グラフィックス</Filter>
+    </ClInclude>
+    <ClInclude Include="Component.h">
+      <Filter>ゲームエンジン\ゲームオブジェクト\コンポーネント</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>ゲームエンジン\ゲームオブジェクト</Filter>
+    </ClInclude>
+    <ClInclude Include="Keyboard.h">
+      <Filter>ゲームエンジン\入力デバイス</Filter>
+    </ClInclude>
+    <ClInclude Include="SpriteRenderer.h">
+      <Filter>ゲームエンジン\ゲームオブジェクト\コンポーネント\レンダラー\スプライトレンダラー</Filter>
+    </ClInclude>
+    <ClInclude Include="InputStateBlock.h">
+      <Filter>ゲームエンジン\入力デバイス</Filter>
+    </ClInclude>
+    <ClInclude Include="InputControl.h">
+      <Filter>ゲームエンジン\入力デバイス\コントロール</Filter>
+    </ClInclude>
+    <ClInclude Include="AxisControl.h">
+      <Filter>ゲームエンジン\入力デバイス\コントロール</Filter>
+    </ClInclude>
+    <ClInclude Include="ButtonControl.h">
+      <Filter>ゲームエンジン\入力デバイス\コントロール</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyControl.h">
+      <Filter>ゲームエンジン\入力デバイス\コントロール</Filter>
+    </ClInclude>
+    <ClInclude Include="Key.h">
+      <Filter>ゲームエンジン\入力デバイス\コントロール</Filter>
+    </ClInclude>
+    <ClInclude Include="AnyKeyControl.h">
+      <Filter>ゲームエンジン\入力デバイス\コントロール</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyboardEx.h">
+      <Filter>ゲームエンジン\入力デバイス</Filter>
+    </ClInclude>
+    <ClInclude Include="InputDevice.h">
+      <Filter>ゲームエンジン\入力デバイス</Filter>
+    </ClInclude>
+    <ClInclude Include="InputDeviceDescription.h">
+      <Filter>ゲームエンジン\入力デバイス</Filter>
+    </ClInclude>
+    <ClInclude Include="InputSystem.h">
+      <Filter>ゲームエンジン\入力デバイス</Filter>
+    </ClInclude>
+    <ClInclude Include="InputMetrics.h">
+      <Filter>ゲームエンジン\入力デバイス\測定値</Filter>
+    </ClInclude>
+    <ClInclude Include="InputSettings.h">
+      <Filter>ゲームエンジン\入力デバイス\設定</Filter>
+    </ClInclude>
+    <ClInclude Include="GridLinesRenderer.h">
+      <Filter>ゲームエンジン\ゲームオブジェクト\コンポーネント\レンダラー\グリッド線レンダラー</Filter>
+    </ClInclude>
+    <ClInclude Include="PrimitiveValue.h">
+      <Filter>ゲームエンジン\入力デバイス</Filter>
+    </ClInclude>
+    <ClInclude Include="FourCC.h">
+      <Filter>ゲームエンジン\入力デバイス</Filter>
+    </ClInclude>
+    <ClInclude Include="TypeInfo.h">
+      <Filter>ゲームエンジン\システム</Filter>
+    </ClInclude>
+    <ClInclude Include="Mathf.h">
+      <Filter>ゲームエンジン\数学</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>ゲームエンジン\シーン管理</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneManager.h">
+      <Filter>ゲームエンジン\シーン管理</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderReflection.h">
+      <Filter>ゲームエンジン\グラフィックス\シェーダー</Filter>
+    </ClInclude>
+    <ClInclude Include="AxisRenderer.h">
+      <Filter>ゲームエンジン\ゲームオブジェクト\コンポーネント\レンダラー\XYZ軸レンダラー</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>ゲームエンジン\ゲームオブジェクト\コンポーネント\カメラ</Filter>
+    </ClInclude>
+    <ClInclude Include="Transform.h">
+      <Filter>ゲームエンジン\ゲームオブジェクト\コンポーネント\トランスフォーム</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderTexture.h">
+      <Filter>ゲームエンジン\グラフィックス\テクスチャ</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector3.h">
+      <Filter>ゲームエンジン\数学\3次元ベクトル</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector2.h">
+      <Filter>ゲームエンジン\数学\2次元ベクトル</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>ゲームエンジン\グラフィックス\テクスチャ</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureWrapMode.h">
+      <Filter>ゲームエンジン\グラフィックス\テクスチャ</Filter>
+    </ClInclude>
+    <ClInclude Include="FilterMode.h">
+      <Filter>ゲームエンジン\グラフィックス\テクスチャ</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderTextureDescriptor.h">
+      <Filter>ゲームエンジン\グラフィックス\テクスチャ</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicsFormat.h">
+      <Filter>ゲームエンジン\グラフィックス\テクスチャ</Filter>
+    </ClInclude>
+    <ClInclude Include="Precompiled.h">
+      <Filter>ゲームエンジン</Filter>
+    </ClInclude>
+    <ClInclude Include="Color.h">
+      <Filter>ゲームエンジン\数学\カラー</Filter>
+    </ClInclude>
+    <ClInclude Include="Behaviour.h">
+      <Filter>ゲームエンジン\ゲームオブジェクト\コンポーネント\スクリプト</Filter>
+    </ClInclude>
+    <ClInclude Include="MonoBehaviour.h">
+      <Filter>ゲームエンジン\ゲームオブジェクト\コンポーネント\スクリプト</Filter>
+    </ClInclude>
+    <ClInclude Include="Rect.h">
+      <Filter>ゲームエンジン\数学\矩形</Filter>
+    </ClInclude>
+    <ClInclude Include="Sprite.h">
+      <Filter>ゲームエンジン\グラフィックス\スプライト</Filter>
+    </ClInclude>
+    <ClInclude Include="SpriteRendererBatch.h">
+      <Filter>ゲームエンジン\ゲームオブジェクト\コンポーネント\レンダラー\スプライトレンダラー</Filter>
+    </ClInclude>
+    <ClInclude Include="StaticSampler.h">
+      <Filter>ゲームエンジン\グラフィックス\ルートシグネチャ</Filter>
+    </ClInclude>
+    <ClInclude Include="RootParameter.h">
+      <Filter>ゲームエンジン\グラフィックス\ルートシグネチャ</Filter>
+    </ClInclude>
+    <ClInclude Include="RootSignatureBuilder.h">
+      <Filter>ゲームエンジン\グラフィックス\ルートシグネチャ</Filter>
+    </ClInclude>
+    <ClInclude Include="PipelineStateBuilder.h">
+      <Filter>ゲームエンジン\グラフィックス\パイプラインステート</Filter>
+    </ClInclude>
+    <ClInclude Include="DepthStencilFormat.h">
+      <Filter>ゲームエンジン\グラフィックス\深度ステンシル</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderTargetBlend.h">
+      <Filter>ゲームエンジン\グラフィックス\パイプラインステート</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer.h">
+      <Filter>ゲームエンジン\ゲームオブジェクト\コンポーネント\レンダラー</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector4.h">
+      <Filter>ゲームエンジン\数学\4次元ベクトル</Filter>
+    </ClInclude>
+    <ClInclude Include="Matrix4x4.h">
+      <Filter>ゲームエンジン\数学\行列</Filter>
+    </ClInclude>
+    <ClInclude Include="Material.h">
+      <Filter>ゲームエンジン\グラフィックス\マテリアル</Filter>
+    </ClInclude>
+    <ClInclude Include="Quaternion.h">
+      <Filter>ゲームエンジン\数学\四元数</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Shader\SpriteRenderer.hlsli">
+      <Filter>ゲームエンジン\ゲームオブジェクト\コンポーネント\レンダラー\スプライトレンダラー</Filter>
+    </None>
+    <None Include="Assets\Shader\SpriteRendererPS.hlsl">
+      <Filter>ゲームエンジン\ゲームオブジェクト\コンポーネント\レンダラー\スプライトレンダラー</Filter>
+    </None>
+    <None Include="Vector3.inl">
+      <Filter>ゲームエンジン\数学\3次元ベクトル</Filter>
+    </None>
+    <None Include="Vector2.inl">
+      <Filter>ゲームエンジン\数学\2次元ベクトル</Filter>
+    </None>
+    <None Include="Assets\Shader\SpriteRendererVS.hlsl">
+      <Filter>ゲームエンジン\ゲームオブジェクト\コンポーネント\レンダラー\スプライトレンダラー</Filter>
+    </None>
+    <None Include="Rect.inl">
+      <Filter>ゲームエンジン\数学\矩形</Filter>
+    </None>
+    <None Include="Vector4.inl">
+      <Filter>ゲームエンジン\数学\4次元ベクトル</Filter>
+    </None>
+    <None Include="Quaternion.inl">
+      <Filter>ゲームエンジン\数学\四元数</Filter>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,50 @@
+
+#include <DirectXMath.h>
+
+struct Sphere
+{
+    DirectX::XMFLOAT3 pos;
+    float radius;
+};
+
+struct Frustum
+{
+    DirectX::XMFLOAT4 planes[6];
+};
+
+bool SphereInFrustum(const Sphere& sphere, const Frustum& frustum)
+{
+    // フラスタムの6平面の全てと判定する
+    for (int i = 0; i < 6; i++)
+    {
+        // 平面の方程式
+        //  ax + by + cz + d = 0 より、
+        //  ax + by + cz + d > 0 は法線と順方向の空間を表し、
+        //  ax + by + cz + d < 0 は法線と逆方向の空間を表す。
+        // 
+        // 平面の法線をN=(a,b,c)、任意の点をP=(x,y,z)とすると、
+        //      点Pが平面上に存在する場合は             N・P = 0
+        //      点Pが法線と順方向の空間に存在する場合は N・P > 0
+        //      点Pが法線と逆方向の空間に存在する場合は N・P < 0
+        // 
+        // また、点Pと平面との距離Lは、
+        //   L = |N・P| / √(N・N)
+        // 
+        // ただし、法線Nが正規化されていた場合は、
+        //   L = |N・P|
+        //
+        const float NP =
+            frustum.planes[i].x * sphere.pos.x +
+            frustum.planes[i].y * sphere.pos.y +
+            frustum.planes[i].z * sphere.pos.z +
+            frustum.planes[i].w;
+
+        // 球の中心が法線と逆方向の空間に存在する、かつ、
+        // 球の中心と平面との距離が球の半径よりも大きいならば、
+        // 球はフラスタムと交差していない。
+        if ((NP < 0) && (-NP < sphere.radius))
+            return false;
+    }
+
+     return true;
+}

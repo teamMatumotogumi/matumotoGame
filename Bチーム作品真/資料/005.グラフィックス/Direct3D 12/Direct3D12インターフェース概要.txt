@@ -1,0 +1,107 @@
+﻿【コピーエンジン】
+	Close
+	CopyBufferRegion
+	CopyResource
+	CopyTextureRegion
+	CopyTiles
+	Reset
+	ResourceBarrier
+	
+【コンピュートエンジン】
+	ClearState
+	ClearUnorderedAccessViewFloat
+	ClearUnorderedAccessViewUint
+	DiscardResource
+	Dispatch
+	ExecuteIndirect
+	SetComputeRoot32BitConstant
+	SetComputeRoot32BitConstants
+	SetComputeRootConstantBufferView
+	SetComputeRootDescriptorTable
+	SetComputeRootShaderResourceView
+	SetComputeRootSignature
+	SetComputeRootUnorderedAccessView
+	SetDescriptorHeaps
+	SetPipelineState
+	SetPredication
+
+【3Dエンジン】
+	＜ID3D12GraphicsCommandList＞
+		BeginEvent
+		BeginQuery
+		ClearDepthStencilView
+		ClearRenderTargetView
+		DrawIndexedInstanced
+		DrawInstanced
+		EndEvent
+		EndQuery
+		ExecuteBundle
+		IASetIndexBuffer
+		IASetPrimitiveTopology
+		IASetVertexBuffers
+		OMSetBlendFactor
+		OMSetRenderTargets
+		OMSetStencilRef
+		ResolveQueryData
+		ResolveSubresource
+		RSSetScissorRects
+		RSSetViewports
+		SetGraphicsRoot32BitConstant
+		SetGraphicsRoot32BitConstants
+		SetGraphicsRootConstantBufferView
+		SetGraphicsRootDescriptorTable
+		SetGraphicsRootShaderResourceView
+		SetGraphicsRootSignature
+		SetGraphicsRootUnorderedAccessView
+		SetMarker
+		SOSetTargets
+
+	＜ID3D12GraphicsCommandList1＞
+		AtomicCopyBufferUINT
+		AtomicCopyBufferUINT64
+		OMSetDepthBounds
+		ResolveSubresourceRegion
+		SetSamplePositions
+		SetViewInstanceMask
+
+	＜ID3D12GraphicsCommandList2＞
+		WriteBufferImmediate
+
+	＜ID3D12GraphicsCommandList3＞
+		SetProtectedResourceSession
+
+	＜ID3D12GraphicsCommandList4＞
+		BeginRenderPass
+		BuildRaytracingAccelerationStructure
+		CopyRaytracingAccelerationStructure
+		DispatchRays
+		EmitRaytracingAccelerationStructurePostbuildInfo
+		EndRenderPass
+		ExecuteMetaCommand
+		InitializeMetaCommand
+		SetPipelineState1
+
+	＜ID3D12GraphicsCommandList5＞
+		RSSetShadingRate
+		RSSetShadingRateImage
+
+
+【コマンドキュ－(ID3D12CommandQueue)】
+	BeginEvent
+	CopyTileMappings
+	EndEvent
+	ExecuteCommandLists
+	GetClockCalibration
+	GetDesc
+	GetTimestampFrequency
+	SetMarker
+	Signal
+	UpdateTileMappings
+	Wait
+
+
+
+
+
+
+
