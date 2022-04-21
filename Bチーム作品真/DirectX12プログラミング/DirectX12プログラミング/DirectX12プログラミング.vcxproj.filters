@@ -266,6 +266,9 @@
     <ClCompile Include="Texture2D.cpp">
       <Filter>ゲームエンジン\グラフィックス\テクスチャ</Filter>
     </ClCompile>
+    <ClCompile Include="GameScene.cpp">
+      <Filter>アプリ\ゲームコード</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BufferResource.h">
@@ -462,6 +465,9 @@
     </ClInclude>
     <ClInclude Include="Quaternion.h">
       <Filter>ゲームエンジン\数学\四元数</Filter>
+    </ClInclude>
+    <ClInclude Include="GameScene.h">
+      <Filter>アプリ\ゲームコード</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

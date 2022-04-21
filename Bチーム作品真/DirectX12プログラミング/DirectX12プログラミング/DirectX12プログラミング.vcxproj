@@ -158,6 +158,7 @@
   <ItemGroup>
     <ClCompile Include="AxisRenderer.cpp" />
     <ClCompile Include="Behaviour.cpp" />
+    <ClCompile Include="GameScene.cpp" />
     <ClCompile Include="Quaternion.cpp" />
     <ClCompile Include="Renderer.cpp" />
     <ClCompile Include="RenderTargetBlend.cpp" />
@@ -218,6 +219,7 @@
   <ItemGroup>
     <ClInclude Include="AxisRenderer.h" />
     <ClInclude Include="Behaviour.h" />
+    <ClInclude Include="GameScene.h" />
     <ClInclude Include="Material.h" />
     <ClInclude Include="Matrix4x4.h" />
     <ClInclude Include="Quaternion.h" />
