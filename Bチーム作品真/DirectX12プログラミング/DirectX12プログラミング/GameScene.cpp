@@ -51,11 +51,15 @@ void MatumotoGame::GameScene::CreateBackground(Transform* parent)
 
 void MatumotoGame::GameScene::Update()
 {
+    // 位置の変更
     Transform* transform = m_mainCameraComponent->GetTransform();
     DirectX::XMFLOAT3 cameraPos = transform->GetLocalPosition();
     cameraPos.x += 5;
+
+    // 
     transform->SetLocalPosition(cameraPos);
 
+    // 今カメラがどこを移しているかを求め、画像を移動させる
     int a = (int)(cameraPos.x / 1920);
 
     
