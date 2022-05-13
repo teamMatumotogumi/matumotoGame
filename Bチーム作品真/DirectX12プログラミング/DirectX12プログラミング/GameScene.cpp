@@ -56,11 +56,13 @@ void MatumotoGame::GameScene::Update()
     DirectX::XMFLOAT3 cameraPos = transform->GetLocalPosition();
     cameraPos.x += 5;
 
-    // 
+    
     transform->SetLocalPosition(cameraPos);
 
     // 今カメラがどこを移しているかを求め、画像を移動させる
     int a = (int)(cameraPos.x / 1920);
+
+    // カメラの位置によって画像を移動させる
 
     
 
