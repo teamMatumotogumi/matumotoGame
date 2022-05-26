@@ -57,5 +57,7 @@ namespace MatumotoGame
 		// ”wŒi‚ğì¬‚µ‚Ü‚·B
 		void CreateBackground(Transform* parent);
 
+
+
 	};
 }

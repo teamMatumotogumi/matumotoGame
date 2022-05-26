@@ -40,12 +40,13 @@ void MatumotoGame::GameScene::CreateMainCamera(Transform* parent)
 void MatumotoGame::GameScene::CreateBackground(Transform* parent)
 {
     // ”wŒi1–‡–Ú
-    Texture2D* background01Texture = Texture2D::FromFile(L"Assets/Stage(B)/WindowsXP.jpg");
-    GameObject::CreateWithSprite("”wŒiã•”", background01Texture, Rect(0, 0, 1920, 1080), Vector2(0.0f, 0.0f), 1.0f, Vector3(0, 0, 100), parent);
+    Texture2D* background01Texture = Texture2D::FromFile(L"Assets/Stage(B)/”wŒi•ÒWÏ‚İ1.png");
+    GameObject::CreateWithSprite("”wŒi1–‡–Ú", background01Texture, Rect(0, 0, 1920, 1080), Vector2(0.0f, 0.0f), 1.0f, Vector3(0, 0, 100), parent);
     // ”wŒi2–‡–Ú
     Texture2D* background02Texture = Texture2D::FromFile(L"Assets/Stage(B)/WindowsXP - ƒRƒs[.jpg");
-    GameObject::CreateWithSprite("”wŒiã•”", background02Texture, Rect(0, 0, 1920, 1080), Vector2(0.0f, 0.0f), 1.0f, Vector3(1920, 0, 100), parent);
+    GameObject::CreateWithSprite("”wŒi2–‡–Ú", background02Texture, Rect(0, 0, 1920, 1080), Vector2(0.0f, 0.0f), 1.0f, Vector3(1920, 0, 100), parent);
 
+    // ”wŒi3–‡–Ú
 }
 
 
@@ -54,7 +55,7 @@ void MatumotoGame::GameScene::Update()
     // ˆÊ’u‚Ì•ÏX
     Transform* transform = m_mainCameraComponent->GetTransform();
     DirectX::XMFLOAT3 cameraPos = transform->GetLocalPosition();
-    cameraPos.x += 5;
+    cameraPos.x += 4;
 
     
     transform->SetLocalPosition(cameraPos);
@@ -63,7 +64,7 @@ void MatumotoGame::GameScene::Update()
     int a = (int)(cameraPos.x / 1920);
 
     // ƒJƒƒ‰‚ÌˆÊ’u‚É‚æ‚Á‚Ä‰æ‘œ‚ğˆÚ“®‚³‚¹‚é
-
+    
     
 
     Scene::Update();
@@ -78,4 +79,5 @@ void MatumotoGame::GameScene::UnloadAssets()
 {
 
 }
+
 
