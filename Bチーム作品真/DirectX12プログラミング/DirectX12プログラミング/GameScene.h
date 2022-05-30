@@ -15,6 +15,8 @@ namespace MatumotoGame
 	private:
 		GameObject* m_sceneRoot;
 		Camera* m_mainCameraComponent;
+		GameObject* m_object1;
+		GameObject* m_object2;
 
 		// ゲームの進行を表す列挙型
 		enum  class State

@@ -34,17 +34,17 @@ void MatumotoGame::GameScene::CreateMainCamera(Transform* parent)
     // ˆÊ’u‚Ì•ÏX
     Transform* transform = mainCamera->GetTransform();
     transform->SetParent(parent);
-    transform->SetLocalPosition(1920 / 2, 1080 / 2, -10);
+    transform->SetLocalPosition(1920/2, 1080 / 2, -10);
 }
 
 void MatumotoGame::GameScene::CreateBackground(Transform* parent)
 {
     // ”wŒi1–‡–Ú
     Texture2D* background01Texture = Texture2D::FromFile(L"Assets/Stage(B)/”wŒi•ÒWÏ‚Ý1.png");
-    GameObject::CreateWithSprite("”wŒi1–‡–Ú", background01Texture, Rect(0, 0, 1920, 1080), Vector2(0.0f, 0.0f), 1.0f, Vector3(0, 0, 100), parent);
+    m_object1 = GameObject::CreateWithSprite("”wŒi1–‡–Ú", background01Texture, Rect(0, 0, 1920, 1080), Vector2(0.0f, 0.0f), 1.0f, Vector3(0, 0, 100), parent);
     // ”wŒi2–‡–Ú
     Texture2D* background02Texture = Texture2D::FromFile(L"Assets/Stage(B)/WindowsXP - ƒRƒs[.jpg");
-    GameObject::CreateWithSprite("”wŒi2–‡–Ú", background02Texture, Rect(0, 0, 1920, 1080), Vector2(0.0f, 0.0f), 1.0f, Vector3(1920, 0, 100), parent);
+  m_object2 =  GameObject::CreateWithSprite("”wŒi2–‡–Ú", background02Texture, Rect(0, 0, 1920, 1080), Vector2(0.0f, 0.0f), 1.0f, Vector3(1920, 0, 100), parent);
 
     // ”wŒi3–‡–Ú
 }
@@ -60,10 +60,15 @@ void MatumotoGame::GameScene::Update()
     
     transform->SetLocalPosition(cameraPos);
 
-    // ¡ƒJƒƒ‰‚ª‚Ç‚±‚ðˆÚ‚µ‚Ä‚¢‚é‚©‚ð‹‚ßA‰æ‘œ‚ðˆÚ“®‚³‚¹‚é
-    int a = (int)(cameraPos.x / 1920);
+    // ¡ƒJƒƒ‰‚ª‚Ç‚±‚ðˆÚ‚µ‚Ä‚¢‚é‚©‚ð‹‚ßA‰æ‘œ1‚ðˆÚ“®‚³‚¹‚é
+    float a = (int)((cameraPos.x + 1920 -(1920 / 2)) / 3840) * 3840;
+    m_object1->GetTransform()->SetLocalPosition( a,  0,  0);
 
-    // ƒJƒƒ‰‚ÌˆÊ’u‚É‚æ‚Á‚Ä‰æ‘œ‚ðˆÚ“®‚³‚¹‚é
+    // 2–‡–Ú‚ð•Ï‚¦‚é
+    float b = (int)((cameraPos.x + 3840 - (1920 / 2)) / 5760) * 5760;
+    m_object2->GetTransform()->SetLocalPosition(b, 0, 0);
+   
+
     
     
 

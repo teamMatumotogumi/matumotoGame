@@ -469,6 +469,9 @@
     <ClInclude Include="GameScene.h">
       <Filter>アプリ\ゲームコード</Filter>
     </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>アプリ\ゲームコード</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Shader\SpriteRenderer.hlsli">
