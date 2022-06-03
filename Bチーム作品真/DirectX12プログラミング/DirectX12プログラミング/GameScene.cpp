@@ -55,7 +55,7 @@ void MatumotoGame::GameScene::Update()
     // ˆÊ’u‚Ì•ÏX
     Transform* transform = m_mainCameraComponent->GetTransform();
     DirectX::XMFLOAT3 cameraPos = transform->GetLocalPosition();
-    cameraPos.x += 40;
+    cameraPos.x += 4;
 
     
     transform->SetLocalPosition(cameraPos);
