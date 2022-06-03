@@ -177,6 +177,7 @@
     <ClCompile Include="RenderTexture.cpp" />
     <ClCompile Include="RenderTextureDescriptor.cpp" />
     <ClCompile Include="RootSignatureBuilder.cpp" />
+    <ClCompile Include="Save.cpp" />
     <ClCompile Include="Scene.cpp" />
     <ClCompile Include="SceneManager.cpp" />
     <ClCompile Include="ShaderReflection.cpp" />
@@ -239,6 +240,7 @@
     <ClInclude Include="RenderTextureDescriptor.h" />
     <ClInclude Include="RootParameter.h" />
     <ClInclude Include="RootSignatureBuilder.h" />
+    <ClInclude Include="Save.h" />
     <ClInclude Include="Scene.h" />
     <ClInclude Include="SceneManager.h" />
     <ClInclude Include="ShaderReflection.h" />

@@ -269,6 +269,9 @@
     <ClCompile Include="GameScene.cpp">
       <Filter>アプリ\ゲームコード</Filter>
     </ClCompile>
+    <ClCompile Include="Save.cpp">
+      <Filter>ゲームエンジン</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BufferResource.h">
@@ -473,6 +476,9 @@
       <Filter>アプリ\ゲームコード</Filter>
     </ClInclude>
     <ClInclude Include="Audio.h">
+      <Filter>アプリ\ゲームコード</Filter>
+    </ClInclude>
+    <ClInclude Include="Save.h">
       <Filter>アプリ\ゲームコード</Filter>
     </ClInclude>
   </ItemGroup>
