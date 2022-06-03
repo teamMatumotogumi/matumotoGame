@@ -35,5 +35,5 @@ int PlayData::Load()
 
     fclose(fin);
 
-    return 0;
+    return score;
 }

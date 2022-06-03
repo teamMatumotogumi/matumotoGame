@@ -131,10 +131,6 @@ int WINAPI _tWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPTSTR lpszCm
     UNREFERENCED_PARAMETER(lpszCmdLine);
     UNREFERENCED_PARAMETER(nCmdShow);
 
-    PlayData data;
-    data.SetPath("Assets/PlayData.dat");
-    
-
     //---------------------------------------------------------------------------------------------------------------------------------------------
     // 開発時に便利なコンソールウィンドウの作成
     // 
@@ -161,6 +157,16 @@ int WINAPI _tWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPTSTR lpszCm
     FILE* fp = nullptr;
     freopen_s(&fp, "CONOUT$", "w", stdout);
     freopen_s(&fp, "CONIN$", "r", stdin);
+
+    
+
+    PlayData data;
+    data.SetPath("Assets/PlayData.txt");
+    //data.Save(100);
+    printf("%d", data.Load());
+    
+
+
 
     //---------------------------------------------------------------------------------------------------------------------------------------------
     // COMシステムの初期化
