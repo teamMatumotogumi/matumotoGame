@@ -217,6 +217,7 @@
     <ClCompile Include="VertexBuffer.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Audio.h" />
     <ClInclude Include="AxisRenderer.h" />
     <ClInclude Include="Behaviour.h" />
     <ClInclude Include="GameScene.h" />
