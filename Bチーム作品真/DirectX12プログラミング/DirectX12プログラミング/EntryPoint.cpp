@@ -159,7 +159,7 @@ int WINAPI _tWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPTSTR lpszCm
     freopen_s(&fp, "CONIN$", "r", stdin);
 
     
-
+    // セーブを使ってみる
     PlayData data;
     data.SetPath("Assets/PlayData.txt");
     //data.Save(100);
