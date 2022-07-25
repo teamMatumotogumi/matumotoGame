@@ -272,6 +272,9 @@
     <ClCompile Include="Save.cpp">
       <Filter>アプリ\ゲームコード</Filter>
     </ClCompile>
+    <ClCompile Include="Audio.cpp">
+      <Filter>アプリ\ゲームコード</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BufferResource.h">
