@@ -12,8 +12,8 @@ void MatumotoGame::GameScene::LoadAssets()
     // 背景を作成
     CreateBackground(m_sceneRoot->GetTransform());
 
-   
-
+    // 背景音(BGM)の再生
+    PlaySound("Assets/Audio(B)/BGM/魔王魂 ファンタジー14.wav", nullptr, SND_ASYNC | SND_FILENAME | SND_LOOP);
 }
 
 void MatumotoGame::GameScene::CreateMainCamera(Transform* parent)

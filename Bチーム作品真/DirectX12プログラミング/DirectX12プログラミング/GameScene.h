@@ -4,7 +4,6 @@
 
 namespace MatumotoGame
 {
-	
 
 	// プレイヤーコントローラー
 	class GameScene : public Scene
