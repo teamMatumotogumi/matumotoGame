@@ -43,10 +43,17 @@ void MatumotoGame::GameScene::CreateMainCamera(Transform* parent)
 
 void MatumotoGame::GameScene::CreatePlayer(Transform* parent)
 {
+    //メインカメラ用のゲームオブジェクトを生成
+    GameObject* player = new GameObject("プレイヤー");
 
     //プレイヤーを生成
     Texture2D* playerTexture = Texture2D::FromFile(L"Assets/Player(B)/3022856.png");
-    m_object3 = GameObject::CreateWithSprite("Player", playerTexture, Rect(0, 0, 108, 108), Vector2(0.0f, 0.0f), 1.0f, Vector3(0, 0, 0), parent);
+    m_object3 = GameObject::CreateWithSprite("Player", playerTexture, Rect(0, 0, 108, 108), Vector2(0.0f, 0.0f), 1.0f, Vector3(0, 320, 0), parent);
+
+    //位置の変更
+    Transform* transform = player->GetTransform();
+    transform->SetParent(parent);
+    transform->SetLocalPosition(1920 / 2, 1080 / 2, -10);
 }
 
 
@@ -70,7 +77,12 @@ void MatumotoGame::GameScene::Update()
     DirectX::XMFLOAT3 cameraPos = transform->GetLocalPosition();
     cameraPos.x += 1;
     
+    Transform* transfrom = m_object3->GetTransform();
+    DirectX::XMFLOAT3 playerPos = transform->GetLocalPosition();
+    playerPos.x += 1;
+
     transform->SetLocalPosition(cameraPos);
+    transform->SetLocalPosition(playerPos);
 
     // 今カメラがどこを移しているかを求め、画像1を移動させる
     float a = (int)((cameraPos.x + 1920 -(1920 / 2)) / 3840) * 3840;
