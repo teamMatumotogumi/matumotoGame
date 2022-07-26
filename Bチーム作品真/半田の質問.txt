@@ -1,0 +1,41 @@
+プレイヤーを移動させようとしたのですが、プレイヤーのトランスフォームを取得して動かそうと思ったのですが、
+出来なかったのでご教授お願いします
+
+
+プレイヤーヘッダーにて
+#pragma once
+
+
+
+class Player
+{
+private:
+	//bool m_orthographic;						// true:正射影  false:透視射影
+	//float m_fieldOfView;						// 鉛直方向視野角 (単位はラジアン)
+	//float m_aspect;								// アスペクト比 (= 水平方向視野角 / 鉛直方向視野角)
+	//float m_nearClipPlane;						// カメラから前方クリッピング平面までの距離
+	//float m_farClipPlane;						// カメラから後方クリッピング平面までの距離
+	//float m_orthographicSize;					// カメラの鉛直方向視野サイズの半分。
+	//CameraClearFlags m_clearFlags;				// レンダーターゲットをクリアする際の方法
+	//Color m_backgroundColor;					// 背景色 (SolidColorの時のみ有効)
+	//Rect m_rect;								// 正規化されたビューポート矩形
+	//mutable DirectX::XMFLOAT4X4 m_viewMatrix;	// ビュー変換行列
+	//mutable DirectX::XMFLOAT4X4 m_projMatrix;	// プロジェクション変換行列
+	//friend class Scene;							// Sceneクラスは友達
+	//friend class GameObject;					// GameObjectクラスは友達
+
+protected:
+	// コンストラクタ
+	Player();
+
+	// デストラクタ
+	virtual ~Player();
+};
+
+コーポーネントcppにて
+
+//Transform* Component::Gattransfrom()const
+//{
+//    return m_player->GetTransfrom();
+//}
+
