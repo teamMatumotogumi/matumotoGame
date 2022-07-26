@@ -53,7 +53,7 @@ void MatumotoGame::GameScene::CreatePlayer(Transform* parent)
     //ˆÊ’u‚Ì•ÏX
     Transform* transform = player->GetTransform();
     transform->SetParent(parent);
-    transform->SetLocalPosition(1920 / 2, 1080 / 2, -10);
+    transform->SetLocalPosition(0, 320, 0);
 }
 
 
@@ -64,7 +64,7 @@ void MatumotoGame::GameScene::CreateBackground(Transform* parent)
     m_object1 = GameObject::CreateWithSprite("”wŒi1–‡–Ú", background01Texture, Rect(0, 0, 1920, 1080), Vector2(0.0f, 0.0f), 1.0f, Vector3(0, 0, 100), parent);
     // ”wŒi2–‡–Ú
     Texture2D* background02Texture = Texture2D::FromFile(L"Assets/Stage(B)/back2.png");
-  m_object2 =  GameObject::CreateWithSprite("”wŒi2–‡–Ú", background02Texture, Rect(0, 0, 1920, 1080), Vector2(0.0f, 0.0f), 1.0f, Vector3(1920, 0, 100), parent);
+    m_object2 =  GameObject::CreateWithSprite("”wŒi2–‡–Ú", background02Texture, Rect(0, 0, 1920, 1080), Vector2(0.0f, 0.0f), 1.0f, Vector3(1920, 0, 100), parent);
 
 }
 
