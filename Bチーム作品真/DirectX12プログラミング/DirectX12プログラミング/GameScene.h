@@ -16,6 +16,7 @@ namespace MatumotoGame
 		Camera* m_mainCameraComponent;
 		GameObject* m_object1;
 		GameObject* m_object2;
+		GameObject* m_object3;
 
 		// ゲームの進行を表す列挙型
 		enum  class State
@@ -54,6 +55,9 @@ namespace MatumotoGame
 	private:
 		// カメラを作成します。
 		void CreateMainCamera(Transform* parent);
+
+		//プレイヤーを生成します
+		void CreatePlayer(Transform* parent);
 
 		// 背景を作成します。
 		void CreateBackground(Transform* parent);

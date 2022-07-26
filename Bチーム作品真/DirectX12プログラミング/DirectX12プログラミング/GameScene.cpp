@@ -9,6 +9,9 @@ void MatumotoGame::GameScene::LoadAssets()
     // メインカメラを作成
     CreateMainCamera(m_sceneRoot->GetTransform());
 
+    //プレイヤーを生成
+    CreatePlayer(m_sceneRoot->GetTransform());
+
     // 背景を作成
     CreateBackground(m_sceneRoot->GetTransform());
 
@@ -38,6 +41,15 @@ void MatumotoGame::GameScene::CreateMainCamera(Transform* parent)
     transform->SetLocalPosition(1920/2, 1080 / 2, -10);
 }
 
+void MatumotoGame::GameScene::CreatePlayer(Transform* parent)
+{
+
+    //プレイヤーを生成
+    Texture2D* playerTexture = Texture2D::FromFile(L"Assets/Player(B)/3022856.png");
+    m_object3 = GameObject::CreateWithSprite("Player", playerTexture, Rect(0, 0, 108, 108), Vector2(0.0f, 0.0f), 1.0f, Vector3(-200, 0, 0), parent);
+}
+
+
 void MatumotoGame::GameScene::CreateBackground(Transform* parent)
 {
     // 背景1枚目
@@ -56,7 +68,7 @@ void MatumotoGame::GameScene::Update()
     // 位置の変更
     Transform* transform = m_mainCameraComponent->GetTransform();
     DirectX::XMFLOAT3 cameraPos = transform->GetLocalPosition();
-    cameraPos.x += 6;
+    cameraPos.x += 1;
     
     transform->SetLocalPosition(cameraPos);
 
