@@ -46,7 +46,7 @@ void MatumotoGame::GameScene::CreatePlayer(Transform* parent)
 
     //ƒvƒŒƒCƒ„[‚ğ¶¬
     Texture2D* playerTexture = Texture2D::FromFile(L"Assets/Player(B)/3022856.png");
-    m_object3 = GameObject::CreateWithSprite("Player", playerTexture, Rect(0, 0, 108, 108), Vector2(0.0f, 0.0f), 1.0f, Vector3(-200, 0, 0), parent);
+    m_object3 = GameObject::CreateWithSprite("Player", playerTexture, Rect(0, 0, 108, 108), Vector2(0.0f, 0.0f), 1.0f, Vector3(0, 0, 0), parent);
 }
 
 
