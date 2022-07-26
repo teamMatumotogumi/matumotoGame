@@ -17,6 +17,7 @@ namespace MatumotoGame
 		GameObject* m_object1;
 		GameObject* m_object2;
 		GameObject* m_object3;
+		
 
 		// ゲームの進行を表す列挙型
 		enum  class State
