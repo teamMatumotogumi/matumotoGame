@@ -16,7 +16,7 @@ void MatumotoGame::GameScene::LoadAssets()
     CreateBackground(m_sceneRoot->GetTransform());
 
     // 背景音(BGM)の再生
-    PlaySound("Assets/Audio(B)/BGM/魔王魂 ファンタジー14.wav", nullptr, SND_ASYNC | SND_FILENAME | SND_LOOP);
+   // PlaySound("Assets/Audio(B)/BGM/魔王魂 ファンタジー14.wav", nullptr, SND_ASYNC | SND_FILENAME | SND_LOOP);
 }
 
 void MatumotoGame::GameScene::CreateMainCamera(Transform* parent)
@@ -72,26 +72,51 @@ void MatumotoGame::GameScene::CreateBackground(Transform* parent)
 
 void MatumotoGame::GameScene::Update()
 {
-    // 位置の変更
-    Transform* transform = m_mainCameraComponent->GetTransform();
-    DirectX::XMFLOAT3 cameraPos = transform->GetLocalPosition();
-    cameraPos.x += 1;
-    
-    Transform* transfrom = m_object3->GetTransform();
-    DirectX::XMFLOAT3 playerPos = transform->GetLocalPosition();
-    playerPos.x += 1;
 
-    transform->SetLocalPosition(cameraPos);
-    transform->SetLocalPosition(playerPos);
 
-    // 今カメラがどこを移しているかを求め、画像1を移動させる
-    float a = (int)((cameraPos.x + 1920 -(1920 / 2)) / 3840) * 3840;
-    m_object1->GetTransform()->SetLocalPosition( a,  0,  0);
 
-    // カメラを求め、2枚目を移動させる
-    float b = (int)((cameraPos.x + 0 - (1920 / 2)) / 3840) * 3840 + 1920;
-    m_object2->GetTransform()->SetLocalPosition(b, 0, 0);
-   
+    // カウントする秒数
+    int total_sec = 10;
+
+    // 計測開始時間を取得する
+    clock_t start = clock();
+
+    for (;;) {
+        // 経過時間を取得する
+        clock_t end = clock();
+
+        // 差分を取り秒数に変換する
+        double sec = (double)(end - start) / CLOCKS_PER_SEC;
+
+        if (sec >= total_sec) {
+            break;
+        }
+    }
+
+
+
+    if (total_sec == 5)
+    {
+        // 位置の変更
+        Transform* transform = m_mainCameraComponent->GetTransform();
+        DirectX::XMFLOAT3 cameraPos = transform->GetLocalPosition();
+        cameraPos.x += 1;
+
+        Transform* transfrom = m_object3->GetTransform();
+        DirectX::XMFLOAT3 playerPos = transform->GetLocalPosition();
+        playerPos.x += 1;
+
+        transform->SetLocalPosition(cameraPos);
+        transform->SetLocalPosition(playerPos);
+
+        // 今カメラがどこを移しているかを求め、画像1を移動させる
+        float a = (int)((cameraPos.x + 1920 - (1920 / 2)) / 3840) * 3840;
+        m_object1->GetTransform()->SetLocalPosition(a, 0, 0);
+
+        // カメラを求め、2枚目を移動させる
+        float b = (int)((cameraPos.x + 0 - (1920 / 2)) / 3840) * 3840 + 1920;
+        m_object2->GetTransform()->SetLocalPosition(b, 0, 0);
+    }
     Scene::Update();
 }
 
