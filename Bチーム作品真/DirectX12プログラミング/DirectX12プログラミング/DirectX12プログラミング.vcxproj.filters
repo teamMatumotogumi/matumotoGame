@@ -275,6 +275,9 @@
     <ClCompile Include="Audio.cpp">
       <Filter>アプリ\ゲームコード</Filter>
     </ClCompile>
+    <ClCompile Include="Timer.cpp">
+      <Filter>アプリ\ゲームコード</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BufferResource.h">
@@ -482,6 +485,9 @@
       <Filter>アプリ\ゲームコード</Filter>
     </ClInclude>
     <ClInclude Include="Save.h">
+      <Filter>アプリ\ゲームコード</Filter>
+    </ClInclude>
+    <ClInclude Include="Timer.h">
       <Filter>アプリ\ゲームコード</Filter>
     </ClInclude>
   </ItemGroup>
